@@ -4,7 +4,7 @@ require 'twitter'
 
 module Moon
   class Bot
-    FILE = 'moon.txt'
+    FILE = 'Moon.txt'
 
     def run
       data = File.read FILE
