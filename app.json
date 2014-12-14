@@ -1,0 +1,25 @@
+{
+  "name": "Moon",
+  "description": "This is mostly stupid.",
+  "keywords": [ "Twitter", "Moon" ],
+  "website": "https://twitter.com/lunar_indus",
+  "env": {
+    "CONSUMER_KEY": {
+      "description": "Twitter Consumer Key.",
+      "required": true
+    },
+    "CONSUMER_SECRET": {
+      "description": "Twitter Consumer Secret.",
+      "required": true
+    },
+    "OAUTH_TOKEN": {
+      "description": "Twitter OAuth Token.",
+      "required": true
+    },
+    "OAUTH_TOKEN_SECRET": {
+      "description": "Twitter OAuth Secret.",
+      "required": true
+    }
+  },
+  "addons": [ "scheduler:standard", "redistogo:nano" ]
+}
