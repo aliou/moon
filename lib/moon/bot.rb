@@ -11,9 +11,10 @@ module Moon
       lines = data.split "----\n"
       lines.shift
 
-      idx = index
-      tweet!(lines[idx])
-      save!(idx + 1)
+      reset! if index == lines.length
+
+      tweet!(lines[index])
+      save!(index + 1)
     end
 
     def reset!
