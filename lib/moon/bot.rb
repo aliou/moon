@@ -11,7 +11,7 @@ module Moon
       lines = data.split "----\n"
       lines.shift
 
-      reset! if index == lines.length
+      reset! if index >= lines.length
 
       tweet!(lines[index])
       save!(index + 1)
